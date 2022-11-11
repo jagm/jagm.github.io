@@ -1,5 +1,6 @@
 .idea
 *.iml
+*.map
 _site/
 _draft/
 .jekyll-cache/
