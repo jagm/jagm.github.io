@@ -1,0 +1,20 @@
+title:        jagm's personal page
+
+baseurl:          /temp-jekyll-gitbook-2342342342
+
+permalink:        /:year-:month-:day-:title:output_ext
+
+exclude:
+  - _drafts
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
+destination:      ./_site
+incremental:      false
+regenerate:       true
+
+plugins:
+  - jekyll-redirect-from

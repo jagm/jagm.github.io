@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+</head>
+<body>
+
+<header>
+    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+</header>
+
+{% if page.content %}
+<article>
+    {% if page.title != '' %}
+        <h2>{{ page.title }}</h2>
+    {% endif %}
+    {% if page.date != '' %}
+        <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%Y-%m-%d"}}</time>
+    {% endif %}
+
+    {{ page.content }}
+</article>
+{% endif %}
+
+<aside>
+    <h2>Posts</h2>
+    <ul>
+        {% assign posts = site.posts | reverse %}
+        {% for post in posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</aside>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
