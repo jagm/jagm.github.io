@@ -1,6 +1,6 @@
 title:        jagm's personal page
 
-baseurl:          /temp-jekyll-gitbook-2342342342
+baseurl:          ''
 
 permalink:        /:year-:month-:day-:title:output_ext
 
