@@ -6,4 +6,4 @@ redirect_from:
 - /pages/
 ---
 
-Hello world
+# Hello world!

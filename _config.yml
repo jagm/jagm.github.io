@@ -2,7 +2,7 @@ title:        jagm's personal page
 
 baseurl:          ''
 
-permalink:        /:year-:month-:day-:title:output_ext
+permalink:        /post/:year-:month-:day-:title:output_ext
 
 exclude:
   - _drafts
